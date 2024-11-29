@@ -1,24 +1,21 @@
-# clients
+# app for learning vuex in vue. clients and products with CRUD operations.
 
 ## Project setup
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+```
+cd <Project>
+```
+
+```
+json-server --watch db.json
+```
+
+## New terminal
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### vue, vuex, axios, vue-router, json-server
