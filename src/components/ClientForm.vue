@@ -18,7 +18,7 @@ export default {
         };
     },
     methods: {
-        ...mapActions(['addClient', 'updateClient']),
+        ...mapActions('clients',['addClient', 'updateClient']),
         
         async submit() {
             if (this.client.id) {

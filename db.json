@@ -10,7 +10,21 @@
       "id": "bbd9",
       "name": "Петр Петрович",
       "email": "petrovich@example.com",
-      "phone": "0123456789"
+      "phone": "012345678"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "Картошка",
+      "price": "100",
+      "weight": "1000"
+    },
+    {
+      "id": "d2a5",
+      "name": "Шашлык",
+      "price": "5000",
+      "weight": "1000"
     }
   ]
 }

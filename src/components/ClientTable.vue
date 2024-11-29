@@ -41,7 +41,7 @@ export default {
         return { filter: '' };
     },
     computed: {
-        ...mapState(['filteredClients', 'pagination']),
+        ...mapState('clients', ['filteredClients', 'pagination']),
         paginatedClients() {
             const start = (this.pagination.currentPage - 1) * this.pagination.pageSize;
             return this.filteredClients.slice(start, start + this.pagination.pageSize);
@@ -51,10 +51,10 @@ export default {
         }
     },
     methods: {
-        ...mapActions(['fetchClients', 'deleteClient']),
+        ...mapActions('clients', ['fetchClients', 'deleteClient']),
 
         filterClients() {
-            this.$store.commit('FILTER_CLIENTS', this.filter);
+            this.$store.commit('clients/FILTER_CLIENTS', this.filter);
         },
 
         editClient(client) {
@@ -67,7 +67,7 @@ export default {
 
         async deleteClient(clientId) {
 
-            await this.$store.dispatch('deleteClient', clientId);
+            await this.$store.dispatch('clients/deleteClient', clientId);
 
         },
 
